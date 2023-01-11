@@ -1,0 +1,2 @@
+# EasyRanks
+Minecraft Ranks Plugin
