@@ -1,0 +1,46 @@
+database:
+  host: "localhost"
+  username: "DatabaseUsername"
+  password: "UserPassword"
+  port: 27017
+  databaseName: "DatabaseName"
+  players_collection: "players"
+  ranks_collection: "ranks"
+  default-rank: "Joueur"
+
+server-settings:
+  name: "Server"
+  version: "1.0"
+  rank-prefix: "%prefix%&l%rank% %prefix%" #Followed by player name (usually)
+
+newcoming:
+  broadcast: true
+  welcome-message:
+    #New line in config.yml will be a new line ingame
+    - "&aBienvenue &c%player%"
+    - "&fSur &b%server% !"
+  join-message:
+    - "&7&l[&a+&7&l] &7%player%"
+  leave-message:
+    - "&7&l[&4-&7&l] &7%player%"
+
+guis:
+  mainManager:
+    title: "&1Database Management"
+    items:
+      ranks:
+        item: GOLD_INGOT
+        name: "&eRanks"
+      #Plugin might not work if item isn't SKULL_ITEM
+      players:
+        item: SKULL_ITEM
+        name: "&bPlayers"
+        owner: "Mimifan"
+  playerManager:
+    title: "&1Player Manager"
+  ranksManager:
+    title: "&1Ranks Manager"
+    rankItems: PAPER
+    prefix: "%prefix%&l%rank%"
+    color: "Changer la couleur du prefix"
+    name: "Changer le nom du grade"

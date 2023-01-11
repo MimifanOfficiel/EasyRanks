@@ -1,0 +1,14 @@
+name: EasyRanks
+version: '${project.version}'
+main: fr.mimifan.er.Main
+prefix: Easy Ranks
+authors: [ Mimifan ]
+description: EasyRanks using Mongo Database for your servers. Permissions, Ranks and NameTags edition.
+website: https://lilabrandon.tk
+commands:
+  easyranks:
+    aliases:
+      - er
+      - easyr
+    description: Open EasyRanks Managing interface
+    permission: easyranks.admin.database
