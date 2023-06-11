@@ -1,0 +1,5 @@
+name: Easyranks
+version: '${project.version}'
+main: fr.mimifan.easyranks.Main
+authors: [ Mimifan ]
+description: Ranks plugin
